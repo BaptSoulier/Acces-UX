@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog de Réservation</title>
+</head>
+<body>
+    <header>
+        <h1>Blog De Reservation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="hotel.html">Hôtel + Vol</a></li>
+                <li><a href="vols.html">Séjour</a></li>
+                <li><a href="voiture.html">Voitures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    
+    <section class="custom-search-section">
+        <form action="search-results.html" method="get">
+            <input type="text" id="destination" name="destination" placeholder="destination"required>
+
+            <input type="date" id="departure-date" name="departure-date" placeholder="depart"required>
+
+            <input type="date" id="return-date" name="return-date" placeholder="retour"required>
+
+            <input type="number" id="travelers" name="travelers" min="1" placeholder="voyageur"required>
+
+            <button type="submit">Rechercher</button>
+        </form>
+    </section>
+
+    <div class="main-content">
+        <!--Sejour -->
+        <article>
+            <img src="Image4.jpg" alt="Formule">
+            <h2>Formule Hotel + Vol</h2>
+            <ul>
+                <li>Large choix d'hotels</li>
+                <li>Tarifs compétitifs et transparents</li>
+                <li>Vol compris</li>
+                <li>Assurance compris</li>
+                <li>Service client disponible 24/7</li>
+            </ul>
+            <p>Prix $1000</p>
+            <a href="reservationVoiture.html">Réserver maintenant</a>
+        </article>
+        <!-- Annonce Hôtel -->
+        <article>
+            <img src="image1.jpeg" alt="Hôtel Luxe">
+            <h2>Hôtel Luxe</h2>
+            <ul>
+                <li>Chambres spacieuses avec vue panoramique</li>
+                <li>Restaurant gastronomique</li>
+                <li>Piscine et spa</li>
+                <li>Service de conciergerie 24/7</li>
+            </ul>
+            <p>Prix par nuit : $200</p>
+            <a href="reservationH.html">Réserver maintenant</a>
+        </article>
+
+       
+        <article>
+            <img src="image2.jpg" alt="Vol Promotionnel">
+            <h2>Le meilleur des vols !</h2>
+            <ul>
+                <li>Vol confortable avec sièges spacieux</li>
+                <li>Repas de qualité servi à bord</li>
+                <li>Divertissement en vol inclus</li>
+                <li>Personnel de bord amical et expérimenté</li>
+            </ul>
+            <p>Prix promotionnel : $299</p>
+            <a href="reservationV.html">Réserver maintenant</a>
+        </article>
+
+        <!-- Location de Voiture -->
+        <article>
+            <img src="Image3.jpg" alt="Voiture de Location">
+            <h2>Location de Voiture</h2>
+            <ul>
+                <li>Large choix de voitures de qualité</li>
+                <li>Tarifs compétitifs et transparents</li>
+                <li>Assurance tout compris</li>
+                <li>Service client disponible 24/7</li>
+            </ul>
+            <p>Prix par jour : $50</p>
+            <a href="reservationVoiture.html">Réserver maintenant</a>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; Baptiste Soulier</p>
+    </footer>
+</body>
+</html>

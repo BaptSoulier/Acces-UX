@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Réserver Hôtel Luxe</title>
+</head>
+<body>
+    <header>
+        <h1>Blog De Reservation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="hotel.html">Hôtel + Vol</a></li>
+                <li><a href="vols.html">Séjour</a></li>
+                <li><a href="voiture.html">Voitures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <article>
+            <h2>Réserver Vol</h2>
+            <form action="process_reservation_vol.php" method="post">
+                <label for="name">Nom complet:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="departure">Aéroport de départ:</label>
+                <input type="text" id="departure" name="departure" required>
+
+                <label for="destination">Aéroport de destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="departure-date">Date de départ:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+
+                <label for="return-date">Date de retour:</label>
+                <input type="date" id="return-date" name="return-date" required>
+
+                <button type="submit">Réserver maintenant</button>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; Baptiste Soulier</p>
+    </footer>
+</body>
+</html>
